@@ -1,4 +1,13 @@
 
+l2 regularization:
+https://github.com/tensorflow/tensorflow/blob/7e3b8b23835ab0ac55d390aed2349af6e05dbe3b/tensorflow/models/image/mnist/convolutional.py#L216
+
+Dropout:
+The paper: https://www.cs.toronto.edu/~hinton/absps/JMLRdropout.pdf
+says dropout applied to all layers is better than at the FC layer, from 3.02$ to 2.55%
+p = (0.9, 0.75, 0.75, 0.5, 0.5, 0.5)
+ 
+
 fig and plotting notes:
 
 The easiest to remember for multiple rows and columns is:
