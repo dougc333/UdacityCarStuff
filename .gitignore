@@ -1,0 +1,24 @@
+<<<<<<< HEAD
+10EPOCHS.ckpt.data-00000-of-00001
+30EPOCHS.ckpt.data-00000-of-00001
+data
+.ipynb_checkpoints
+*.h5
+models
+*.swp
+*.p
+*.gz
+*.zip
+*.csv
+*.p
+*.index
+*.meta
+**/.zip
+**/.gz
+**/.meta
+**/.index
+traffic-signs-data.zip
+=======
+CarND-LaneLines-P1/yellow.mp4
+>>>>>>> 6c272f54e16faf046cb4dc882ca6087b355538d6
+
