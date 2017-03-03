@@ -2,6 +2,7 @@
 10EPOCHS.ckpt.data-00000-of-00001
 30EPOCHS.ckpt.data-00000-of-00001
 data
+.DS_Store
 .ipynb_checkpoints
 *.h5
 models
