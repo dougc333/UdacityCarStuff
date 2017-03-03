@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ## Project: Build a Traffic Sign Recognition Program
 [![Udacity - Self-Driving Car NanoDegree](https://s3.amazonaws.com/udacity-sdc/github/shield-carnd.svg)](http://www.udacity.com/drive)
 ### Overview
@@ -21,3 +22,9 @@ cd CarND-Traffic-Sign-Classifier-Project
 jupyter notebook Traffic_Sign_Classifier.ipynb
 ```
 3. Follow the instructions in the `Traffic_Sign_Recognition.ipynb` notebook.
+=======
+
+udacity car examples
+3conda anaconda runtime for CarND-LaneLines-P1
+
+>>>>>>> 6c272f54e16faf046cb4dc882ca6087b355538d6
