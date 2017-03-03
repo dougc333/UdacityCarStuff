@@ -6,12 +6,13 @@ Dropout:
 The paper: https://www.cs.toronto.edu/~hinton/absps/JMLRdropout.pdf
 says dropout applied to all layers is better than at the FC layer, from 3.02$ to 2.55%
 p = (0.9, 0.75, 0.75, 0.5, 0.5, 0.5)
- 
+Test this on our dataset. pyth 
 
 fig and plotting notes:
 
 The easiest to remember for multiple rows and columns is:
-
+GridSpec(#rows,#cols)
+subplot(rows,cols, )
 gs1 = gridspec.GridSpec(2, 2)
 #this spacing doesnt make a difference
 gs1.update(wspace=2.0, hspace= 2.0)
@@ -53,6 +54,19 @@ Prove RGB vs BGR in train.p test,p
 
 #print (imgtest[:,:,1])
 #Eplt.imshow(imgtest[:,:,1]) #first channel G
+
+to plot more use print options
+#np.set_printoptions(threshold=5000)
+#print (X_train[0,:,:,0])
+#plt.imshow(X_train[0,:,:,0])
+
+#plt.imshow(X_train[0][:,:,1])
+#print (X_train[0,:,:,1])
+#print (X_train[0,:,:,1].shape)
+
+#print(X_train[0,:,:,2])
+#plt.imshow(X_train[0,:,:,2]) #looks like Blue, matches
+
 
 
 
