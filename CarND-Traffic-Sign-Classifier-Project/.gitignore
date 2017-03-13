@@ -1,5 +1,6 @@
 10EPOCHS.ckpt.data-00000-of-00001
 30EPOCHS.ckpt.data-00000-of-00001
+100EPOCHS*
 .ipynb_checkpoints
 *.h5
 data
