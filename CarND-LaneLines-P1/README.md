@@ -2,7 +2,7 @@
 
 The goals / steps of this project are the following:
 
-1) Make a pipeline that finds lane lines on the road
+I) Make a pipeline that finds lane lines on the road
 
 Describe your pipeline. As part of the description, explain how you modified the draw_lines() function.
 
@@ -21,7 +21,7 @@ To quality check the dimensions; show all the test images with the trapezoid dim
 
 <img src='cannyroi.png' width="480" />
 
- calculate the lines in the above image using the proabilistic hough transform. Observe the left and right slopes. Filter into 2 lists and caculate average. Take longest segment and interpolate to where y=0 and calculate vanishing point. 
+3) calculate the lines in the above image using the proabilistic hough transform. Observe the left and right slopes. Filter into 2 lists and caculate average. Take longest segment and interpolate to where y=0 and calculate vanishing point. 
 
 
 Algorithm for calculating vanishing point: 
@@ -58,11 +58,11 @@ The vanishing point represents the point on the horizon where anything above tha
 <img src='vanishingpoint.png' width="480">
 4)  Draw the lane lines using the interpolated/calculated vanishing point using 60% of the value from y=0 to the vanishing point. Adjust to smaller value as the car starts moving. Average lines together to prevent sudden jumps.
 
-2. Identify potential shortcomings with your current pipeline
+II. Identify potential shortcomings with your current pipeline
 the ROI is a static dimension. One shortcoming would be if a car was in front of the vehicle before the vanishing point. This would create more vertical and horizontal line artifacts. This problem would get worse with more cars. Also for situations like lane changes or u turns this method would not work well. 
 These images are all daytime images. Another shortcoming are lines created from shadows or no edges in low light or if there is rain. 
 
 
-3. Suggest possible improvements to your pipeline
+III. Suggest possible improvements to your pipeline
 Improvement: add a dynamic ROI region. Compensate for traffic or cars to the side and in front of the camera. 
 
