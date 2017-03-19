@@ -2,11 +2,9 @@
 
 The goals / steps of this project are the following:
 
-I) Make a pipeline that finds lane lines on the road
+#### 1)  Make a pipeline that finds lane lines on the road
 
-Describe your pipeline. As part of the description, explain how you modified the draw_lines() function.
-
-My pipeline consisted of 4 steps:
+Pipeline consisted of 4 steps:
 
 1) Grey scale conversion, Gaussian Blur w/Kernel Size of 9 vs. 3. I did not find the parameters made that much difference; the biggest adjustment was in getting the ROI coordinates correct. Copied the parameters from the lecture videos.  Canny for edge detetion with 50,150. This results in a black background with white lines. The lane lines are in this image.
 
@@ -58,11 +56,11 @@ The vanishing point represents the point on the horizon where anything above tha
 <img src='vanishingpoint.png' width="480">
 4)  Draw the lane lines using the interpolated/calculated vanishing point using 60% of the value from y=0 to the vanishing point. Adjust to smaller value as the car starts moving. Average lines together to prevent sudden jumps.
 
-II. Identify potential shortcomings with your current pipeline
+####2) Identify potential shortcomings with your current pipeline
 the ROI is a static dimension. One shortcoming would be if a car was in front of the vehicle before the vanishing point. This would create more vertical and horizontal line artifacts. This problem would get worse with more cars. Also for situations like lane changes or u turns this method would not work well. 
 These images are all daytime images. Another shortcoming are lines created from shadows or no edges in low light or if there is rain. 
 
 
-III. Suggest possible improvements to your pipeline
+#### 3) Suggest possible improvements to your pipeline
 Improvement: add a dynamic ROI region. Compensate for traffic or cars to the side and in front of the camera. 
 
