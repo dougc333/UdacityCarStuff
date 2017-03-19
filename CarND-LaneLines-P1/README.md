@@ -56,7 +56,7 @@ The vanishing point represents the point on the horizon where anything above tha
 <img src='vanishingpoint.png' width="480">
 4)  Draw the lane lines using the interpolated/calculated vanishing point using 60% of the value from y=0 to the vanishing point. Adjust to smaller value as the car starts moving. Average lines together to prevent sudden jumps.
 
-####2) Identify potential shortcomings with your current pipeline
+#### 2) Identify potential shortcomings with your current pipeline
 the ROI is a static dimension. One shortcoming would be if a car was in front of the vehicle before the vanishing point. This would create more vertical and horizontal line artifacts. This problem would get worse with more cars. Also for situations like lane changes or u turns this method would not work well. 
 These images are all daytime images. Another shortcoming are lines created from shadows or no edges in low light or if there is rain. 
 
