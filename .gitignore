@@ -18,6 +18,8 @@ models
 **/.gz
 **/.meta
 **/.index
+**/.jpg
+CarND-Alexnet-Feature-Extraction/*
 traffic-signs-data.zip
 =======
 CarND-LaneLines-P1/yellow.mp4
